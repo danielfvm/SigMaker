@@ -4,7 +4,7 @@ You can choose the size and address of the binary of which a signature
 should be made and get the pattern and mask as a result. It can also
 show the amount of occurrences within the file.
 
-[Screencast from 2023-05-11 00-30-48.webm](https://github.com/danielfvm/SigMaker/assets/23420640/c4093272-2ee2-4601-b7c4-c82731d60dea)
+![output](https://github.com/danielfvm/SigMaker/assets/23420640/2eecf107-514e-424d-8fab-40822a9c65be)
 
 
 # Usage
