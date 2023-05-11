@@ -19,13 +19,15 @@ Usage:
 ```
 
 ## Example
-As can be seen in the example you will first get the assembler instructions and their addresses (+offset)
-together with the binary code in hex. The bold hex code on the right side are used for the pattern and
-will probably stay the same even if the target application has been updated. The `00` that are not bold
-were previous addresses or offsets that are most likely to change after the application is updated and
+![image](https://github.com/danielfvm/SigMaker/assets/23420640/e96f9ca9-ccfd-42ac-ad5a-29d0f55abd66)
+As you can see in the above image you will first receive the assembler instructions and their addresses (+offset)
+together with the binary code in hex. The bold hex codes on the right side are used for the pattern and
+will probably stay the same even if the target application has been updated. The `00` that are not highlighted
+are addresses or offsets that are most likely to change after the application is being updated and
 are therefore marked in the mask with a `?`. Below you can see the pattern and mask together with the
-length that can be used for searching in your application. The `First result` indicates if it was the 
-first result found starting with the lower addresses. If `Occurrences` is 1 `First result` is always true.
+length. THese can be used for searching the address in your application. The `First result` indicates if the first
+match with the generated pattern (starting with the lower addresses) is the address, if not you can make the
+size larger. `Occurrences` is the amount of matches found in the target application.
 Here is an example implementation that you can use for finding addresses with the generated pattern and 
 mask.
 ```cpp
