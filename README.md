@@ -58,7 +58,7 @@ int64_t scanPattern(const PageInfo page, const char* pattern, const char* mask, 
 You will need the [udis869](https://github.com/vmt/udis86) library to compile and install this program.
 
 ## Linux
-Following commands will download, compile and install this program. Keep in mind that you porbably will
+The following commands will download, compile and install this program. Keep in mind that you porbably will
 need root permission for running `make install`, which will then copy the binary file to `/usr/bin/`
 ```
 git clone https://github.com/danielfvm/SigMaker
