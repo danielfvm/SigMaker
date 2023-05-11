@@ -26,8 +26,8 @@ will probably stay the same even if the target application has been updated. The
 are addresses or offsets that are most likely to change after the application is being updated and
 are therefore marked in the mask with a `?`. Below you can see the pattern and mask together with the
 length. THese can be used for searching the address in your application. The `First result` indicates if the first
-match with the generated pattern (starting with the lower addresses) is the address, if not you can make the
-size larger. `Occurrences` is the amount of matches found in the target application.
+match with the generated pattern (starting with the lower addresses) is the address, if not you can increase the
+pattern size in the arguments. `Occurrences` is the amount of matches found in the target application.
 Here is an example implementation that you can use for finding addresses with the generated pattern and 
 mask.
 ```cpp
