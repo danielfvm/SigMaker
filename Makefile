@@ -1,18 +1,19 @@
 CC=gcc
 CFLAGS=-Wall -Werror
 LIBS=-ludis86
-INSTALL_PATH=/usr/bin/sigmaker
+NAME=sigmaker
+INSTALL_PATH=/usr/bin/$(NAME)
 
-all: sigmaker
+all: $(NAME)
 
-sigmaker: SigMaker.c
+$(NAME): SigMaker.c
 	$(CC) $(CFLAGS) $^ -o $@ $(LIBS)
 
 install:
-	cp sigmaker $(INSTALL_PATH)
+	cp $(NAME) $(INSTALL_PATH)
 
 uninstall:
 	rm $(INSTALL_PATH)
 
 clean:
-	rm -f sigmaker
+	rm -f $(NAME)
