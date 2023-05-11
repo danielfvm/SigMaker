@@ -122,7 +122,7 @@ int main(int argc, char** argv) {
         const char* code = ud_insn_asm(&ud);
         const ud_operand_t* op;
 
-        printf("%lx:%ld\t%-30s", selected_address + offset, offset, code);
+        printf("%lx:%-8ld%-30s", selected_address + offset, offset, code);
 
         // Copy instructions into pattern
         memcpy(&pattern[pattern_i], ud_insn_ptr(&ud), len);
