@@ -55,7 +55,7 @@ int64_t scanPattern(const PageInfo page, const char* pattern, const char* mask, 
 ```
 
 # Installation
-You will need the (udis86)[https://github.com/vmt/udis86] library to compile and install this program.
+You will need the [udis869](https://github.com/vmt/udis86) library to compile and install this program.
 
 ## Linux
 Following commands will download, compile and install this program. Keep in mind that you porbably will
